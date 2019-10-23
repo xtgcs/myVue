@@ -19,7 +19,6 @@ Compile.prototype = {
     nodeToFragment: function (el) {
         let fragment = document.createDocumentFragment();//创建虚拟dom节点对象        
         let child = el.firstChild;
-        console.log(child,777);
         while (child) {
             fragment.appendChild(child);
             child = el.firstChild;

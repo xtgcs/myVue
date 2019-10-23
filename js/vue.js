@@ -10,11 +10,6 @@ function myVue(options) {
     observe(options.data);
     new Compile(options.el, this)
     options.mounted.call(this);
-    // el.innerHTML = this.data[exp];
-    // new Watcher(this, exp, function (valve) { 
-    //     console.log(valve);
-    //     el.innerHTML = valve;
-    // })
     return this;
 }
 
